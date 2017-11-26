@@ -1,0 +1,5 @@
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Check\bin\Debug\Check.dll
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Check\bin\Debug\Check.pdb
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Check\obj\Debug\Check.csprojResolveAssemblyReference.cache
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Check\obj\Debug\Check.dll
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Check\obj\Debug\Check.pdb

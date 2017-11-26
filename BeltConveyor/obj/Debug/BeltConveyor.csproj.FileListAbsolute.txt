@@ -1,0 +1,5 @@
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\BeltConveyor\bin\Debug\BeltConveyor.dll
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\BeltConveyor\bin\Debug\BeltConveyor.pdb
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\BeltConveyor\obj\Debug\BeltConveyor.csprojResolveAssemblyReference.cache
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\BeltConveyor\obj\Debug\BeltConveyor.dll
+C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\BeltConveyor\obj\Debug\BeltConveyor.pdb
