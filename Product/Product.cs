@@ -13,5 +13,6 @@ namespace MyProduct
         public bool isOnSale { get; set; }
         public int countNeedToBuyForSale { get; set; }
         public int salePrice { get; set; }
+
     }
 }

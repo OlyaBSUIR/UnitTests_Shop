@@ -42,6 +42,16 @@
     <Compile Include="BeltConveyor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Product\Product.csproj">
+      <Project>{dca220e9-e1f8-4450-ace6-0d415b4c9f70}</Project>
+      <Name>Product</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShoppingCart\ShoppingCart.csproj">
+      <Project>{e9e6fa2c-aa65-493d-a0dd-7eb15df5681c}</Project>
+      <Name>ShoppingCart</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

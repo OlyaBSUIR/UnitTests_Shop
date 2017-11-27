@@ -1,0 +1,12 @@
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\Product.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\Product.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\BeltConveyor.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\ShoppingCart.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\BeltConveyor.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ConsoleApplication\bin\Debug\ShoppingCart.pdb
