@@ -5,6 +5,5 @@ C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Product\obj\Debug\Product.dll
 C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Product\obj\Debug\Product.pdb
 C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Product.dll
 C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Product.pdb
-C:\Users\Оля\Desktop\Laba7_SPP\Product\obj\Debug\Product.csprojResolveAssemblyReference.cache
 C:\Users\Оля\Desktop\Laba7_SPP\Product\obj\Debug\Product.dll
 C:\Users\Оля\Desktop\Laba7_SPP\Product\obj\Debug\Product.pdb

@@ -1,0 +1,7 @@
+C:\Users\Оля\Desktop\Laba7_SPP\ProductTest\obj\Debug\Product.Test.csprojResolveAssemblyReference.cache
+C:\Users\Оля\Desktop\Laba7_SPP\ProductTest\bin\Debug\ProductTest.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ProductTest\bin\Debug\ProductTest.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ProductTest\bin\Debug\Product.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ProductTest\bin\Debug\Product.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ProductTest\obj\Debug\ProductTest.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ProductTest\obj\Debug\ProductTest.pdb

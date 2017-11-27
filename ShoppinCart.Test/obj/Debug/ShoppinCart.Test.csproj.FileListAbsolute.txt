@@ -1,0 +1,9 @@
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\obj\Debug\ShoppinCart.Test.csprojResolveAssemblyReference.cache
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\ShoppinCart.Test.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\ShoppinCart.Test.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Product.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\ShoppingCart.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Product.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\ShoppingCart.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\obj\Debug\ShoppinCart.Test.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\obj\Debug\ShoppinCart.Test.pdb

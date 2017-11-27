@@ -13,24 +13,27 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            Product sweet = new Product();
-            sweet.price = 125;
-            sweet.isOnSale = true;
-            sweet.countNeedToBuyForSale = 3;
-            sweet.salePrice = 300;
+            Product sweet = new Product("Конфеточки", 125, true, 3, 300);
+            Product apple = new Product("Яблочки", 100, true, 6, 500);
+
             ShoppingCart cart = new ShoppingCart();
-            cart.addToCart(sweet);
-            cart.addToCart(sweet);
-            cart.addToCart(sweet);
-            cart.addToCart(sweet);
-            cart.addToCart(sweet);
+            cart.addToCart(sweet, 5);
+            cart.addToCart(apple, 7);
+            Product sweet1;
+            try
+            {
+                 sweet1 = new Product(null, 125, true, 3, 300);
+            }
+            catch(Exception ex)
+            {
+
+            }
             BeltConveyor conveyor = new BeltConveyor();
             conveyor.putCartOnTConveyor(cart);
             int price = conveyor.getTotalPrice();
             Console.WriteLine(price);
             Console.ReadLine();
             
-
         }
     }
 }
