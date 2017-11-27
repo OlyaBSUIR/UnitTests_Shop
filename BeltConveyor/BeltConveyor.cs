@@ -18,6 +18,7 @@ namespace MyBeltConveyor
         public void putCartOnTConveyor(ShoppingCart cart)
         {
             this.cart = cart;
+            scanCart();
         }
 
         private void scanCart()
@@ -31,7 +32,6 @@ namespace MyBeltConveyor
         
         public int getTotalPrice()
         {
-            scanCart();
             var listOfProducts = this.listOfProducts;
 
             var listOfSaleProduct = listOfProducts.Where(t => t.isOnSale == true);
