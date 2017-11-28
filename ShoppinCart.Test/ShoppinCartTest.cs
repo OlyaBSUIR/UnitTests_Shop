@@ -15,7 +15,6 @@ namespace ShoppinCart.Test
         private IShoppingCart cart;
         private IProduct sweet;
 
-        // Запускается перед стартом каждого тестирующего метода
         [TestInitialize]
         public void TestInitialize()
         {
@@ -31,16 +30,32 @@ namespace ShoppinCart.Test
         }
 
         [TestMethod]
-        public void ShoppingCart_addToCart_ContainsProduct()
+        public void getCountOfProductsInCart_putOneProduct_ContainsOneProduct()
         {
+            int expected = 1;
             cart.addToCart(sweet);
-            Assert.AreNotEqual(true, cart.isEmpty());
+
+            int actual = cart.getCountOfProductsInCart();
+
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
-        public void ShopingCart_takeFromCart_Empty()
+        public void ShoppingCart_addToCart_ContainsProduct()
+        {
+            bool expected = false;
+
+            cart.addToCart(sweet);
+
+            bool actual = cart.isEmpty();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ShopingCart_takeFromCart_CartIsEmpty()
         {
             bool expected = true;
+
             cart.addToCart(sweet);
             cart.takeFromCart();
 
@@ -51,27 +66,36 @@ namespace ShoppinCart.Test
         [TestMethod]
         public void ShopingCart_takeFromCart_ProductsEquals()
         {
-            cart.addToCart(sweet, 1);
-            IProduct product = cart.takeFromCart();
+            IProduct expected = sweet;
 
-            Assert.AreEqual(sweet, product);
+            cart.addToCart(sweet, 1);
+            IProduct actual = cart.takeFromCart();
+
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void ShopingCart_isEmpty_EmptyCart()
         {
-            cart.addToCart(sweet, 1);
-            IProduct product = cart.takeFromCart();
+            bool expected = true;
 
-            Assert.AreEqual(cart.isEmpty(), true);
+            cart.addToCart(sweet);
+            cart.takeFromCart();
+
+            bool actual = cart.isEmpty();
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void ShopingCart_takeAllProductsFromCart_returnTwoProduct()
         {
-            List<IProduct> product = cart.takeAllProductsFromCart();
+            int expected = 2;
             cart.addToCart(sweet, 2);
-            Assert.AreEqual(product.Count, 2);
+
+            List<IProduct> product = cart.takeAllProductsFromCart();
+            int actual = cart.getCountOfProductsInCart();
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }

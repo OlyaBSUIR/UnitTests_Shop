@@ -58,10 +58,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BeltConveyorTest\BeltConveyorTest.csproj">
-      <Project>{986604ee-6a83-4fb2-96b9-b815ffbf59e9}</Project>
-      <Name>BeltConveyorTest</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BeltConveyor\BeltConveyor.csproj">
       <Project>{6e375681-57d0-480e-8d25-dc5279eda7de}</Project>
       <Name>BeltConveyor</Name>
@@ -69,10 +65,6 @@
     <ProjectReference Include="..\Product\Product.csproj">
       <Project>{dca220e9-e1f8-4450-ace6-0d415b4c9f70}</Project>
       <Name>Product</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ShoppinCart.Test\ShoppinCart.Test.csproj">
-      <Project>{3683cbf9-1fea-497e-9fce-d88108c288b6}</Project>
-      <Name>ShoppinCart.Test</Name>
     </ProjectReference>
     <ProjectReference Include="..\ShoppingCart\ShoppingCart.csproj">
       <Project>{e9e6fa2c-aa65-493d-a0dd-7eb15df5681c}</Project>

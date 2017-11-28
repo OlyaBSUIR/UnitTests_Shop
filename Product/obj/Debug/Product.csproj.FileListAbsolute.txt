@@ -5,6 +5,10 @@ C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Product\obj\Debug\Product.dll
 C:\Users\Оля\Desktop\SPP_Laba6\Laba7_SPP\Product\obj\Debug\Product.pdb
 C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Product.dll
 C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Product.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Castle.Core.dll
+C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Moq.dll
+C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Castle.Core.xml
+C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Moq.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\Product\bin\Debug\Moq.xml
 C:\Users\Оля\Desktop\Laba7_SPP\Product\obj\Debug\Product.dll
 C:\Users\Оля\Desktop\Laba7_SPP\Product\obj\Debug\Product.pdb
-C:\Users\Оля\Desktop\Laba7_SPP\Product\obj\Debug\Product.csprojResolveAssemblyReference.cache

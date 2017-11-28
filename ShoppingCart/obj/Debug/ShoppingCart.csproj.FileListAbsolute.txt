@@ -1,7 +1,12 @@
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\ShoppingCart.dll
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\ShoppingCart.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\Castle.Core.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\Moq.dll
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\Product.dll
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\Product.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\Castle.Core.xml
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\Moq.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\bin\Debug\Moq.xml
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\obj\Debug\ShoppingCart.dll
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppingCart\obj\Debug\ShoppingCart.pdb

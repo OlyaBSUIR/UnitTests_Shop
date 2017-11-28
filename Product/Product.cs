@@ -10,6 +10,11 @@ namespace MyProduct
     {
         private String _name;
         private int _price;
+
+        public bool isOnSale { get; set; }
+        public int countNeedToBuyForSale { get; set; }
+        public int salePrice { get; set; }
+
         public String name
         {
             get
@@ -20,11 +25,12 @@ namespace MyProduct
             {
                 if (value == null || value == "")
                 {
-                    throw new ArgumentException("Неверное наименование продукта");
+                    throw new ArgumentException("Incorrect name of product");
                 }
                 _name = value;
             }
         }
+
         public int price
         {
             get
@@ -35,14 +41,12 @@ namespace MyProduct
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Неверное количество товара");
+                    throw new ArgumentException("Incorrect price for product");
                 }
                 _price = value;
             }
         }
-        public bool isOnSale { get; set; }
-        public int countNeedToBuyForSale { get; set; }
-        public int salePrice { get; set; }
+
 
         public Product(String name, int price, bool isOnSale = false, int countNeedToBuyForSale = 0, int salePrice = 0)
         {

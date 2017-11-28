@@ -9,7 +9,7 @@ namespace MyShoppingCart
 {
     public class ShoppingCart : IShoppingCart
     {
-        private List<IProduct> listOfProducts= new List<IProduct>();
+        private List<IProduct> listOfProducts = new List<IProduct>();
 
         public List<IProduct> takeAllProductsFromCart()
         {
@@ -18,6 +18,10 @@ namespace MyShoppingCart
 
         public void addToCart(IProduct product, int count = 1)
         {
+            if (product == null && count <= 0)
+            {
+                throw new ArgumentException("Incorrect data");
+            }
             for (int i = 0; i < count; i++)
             {
                 listOfProducts.Add(product);
@@ -33,7 +37,12 @@ namespace MyShoppingCart
 
         public bool isEmpty()
         {
-            return listOfProducts.Count==0;
+            return listOfProducts.Count == 0;
+        }
+
+        public int getCountOfProductsInCart()
+        {
+            return listOfProducts.Count;
         }
 
     }

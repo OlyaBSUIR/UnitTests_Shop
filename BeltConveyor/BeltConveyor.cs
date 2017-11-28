@@ -13,7 +13,7 @@ namespace MyBeltConveyor
     {
         private IShoppingCart cart;
         private int totalSum;
-        
+
         private List<IProduct> listOfProducts;
 
         public void putCartOnTConveyor(List<IProduct> products)
@@ -23,8 +23,11 @@ namespace MyBeltConveyor
 
         public void putCartOnTConveyor(IShoppingCart cart)
         {
-            this.cart = cart;
-            scanCart();
+            if (!cart.isEmpty())
+            {
+                this.cart = cart;
+                scanCart();
+            }
         }
 
         private void scanCart()
@@ -35,7 +38,7 @@ namespace MyBeltConveyor
                 listOfProducts.Add(cart.takeFromCart());
             }
         }
-        
+
         public int getTotalPrice()
         {
             var listOfProducts = new List<IProduct>();

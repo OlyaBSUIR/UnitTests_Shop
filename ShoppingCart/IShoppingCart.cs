@@ -12,7 +12,7 @@ namespace MyShoppingCart
         void addToCart(IProduct product, int count = 1);
         IProduct takeFromCart();
         bool isEmpty();
-        List<IProduct> takeAllProductsFromCart();        
-
+        List<IProduct> takeAllProductsFromCart();
+        int getCountOfProductsInCart();
     }
 }
