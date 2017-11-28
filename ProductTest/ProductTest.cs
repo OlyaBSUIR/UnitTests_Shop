@@ -43,6 +43,7 @@ namespace ProductTest
                 //Assert.Fail("Fail");
             }
             Assert.IsNull(sweet);
+            //Assert.Fail("Fail");
         }
     }
 }

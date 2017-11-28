@@ -7,3 +7,8 @@ C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Product.pdb
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\ShoppingCart.pdb
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\obj\Debug\ShoppinCart.Test.dll
 C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\obj\Debug\ShoppinCart.Test.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Castle.Core.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Moq.dll
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Castle.Core.xml
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Moq.pdb
+C:\Users\Оля\Desktop\Laba7_SPP\ShoppinCart.Test\bin\Debug\Moq.xml

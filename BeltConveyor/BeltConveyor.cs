@@ -1,4 +1,5 @@
-﻿using MyProduct;
+﻿using MyBeltConveyor;
+using MyProduct;
 using MyShoppingCart;
 using System;
 using System.Collections.Generic;
@@ -8,14 +9,19 @@ using System.Threading.Tasks;
 
 namespace MyBeltConveyor
 {
-    public class BeltConveyor
+    public class BeltConveyor : IBeltConveyor
     {
-        private ShoppingCart cart;
+        private IShoppingCart cart;
         private int totalSum;
         
-        private List<Product> listOfProducts;
+        private List<IProduct> listOfProducts;
 
-        public void putCartOnTConveyor(ShoppingCart cart)
+        public void putCartOnTConveyor(List<IProduct> products)
+        {
+            listOfProducts = products;
+        }
+
+        public void putCartOnTConveyor(IShoppingCart cart)
         {
             this.cart = cart;
             scanCart();
@@ -23,7 +29,7 @@ namespace MyBeltConveyor
 
         private void scanCart()
         {
-            listOfProducts = new List<Product>();
+            listOfProducts = new List<IProduct>();
             while (!cart.isEmpty())
             {
                 listOfProducts.Add(cart.takeFromCart());
@@ -32,14 +38,19 @@ namespace MyBeltConveyor
         
         public int getTotalPrice()
         {
-            var listOfProducts = this.listOfProducts;
+            var listOfProducts = new List<IProduct>();
+            totalSum = 0;
+            foreach (IProduct product in this.listOfProducts)
+            {
+                listOfProducts.Add(product);
+            }
 
             var listOfSaleProduct = listOfProducts.Where(t => t.isOnSale == true);
             if (listOfSaleProduct != null)
             {
                 while (listOfSaleProduct.Count() != 0)
                 {
-                    Product product = listOfSaleProduct.First();
+                    IProduct product = listOfSaleProduct.First();
                     var listOfOneKindProduct = listOfSaleProduct.Where(t => t.name == product.name);
                     if (listOfOneKindProduct.Count() >= product.countNeedToBuyForSale)
                     {
@@ -51,7 +62,7 @@ namespace MyBeltConveyor
                     }
                     else
                     {
-                        totalSum += listOfOneKindProduct.Count() * product.salePrice;
+                        totalSum += listOfOneKindProduct.Count() * product.price;
                     }
                     listOfProducts.RemoveAll(p => p.name == product.name);
 
@@ -60,12 +71,32 @@ namespace MyBeltConveyor
             }
             if (listOfProducts != null)
             {
-                foreach (Product product in listOfProducts)
+                foreach (IProduct product in listOfProducts)
                 {
                     totalSum += product.price;
                 }
             }
             return totalSum;
+        }
+
+        private int priceWithoutSale()
+        {
+            int sum = 0;
+            foreach (IProduct product in listOfProducts)
+            {
+                sum += product.price;
+            }
+            return sum;
+        }
+
+        public void printCheck()
+        {
+            foreach (IProduct product in listOfProducts)
+            {
+                Console.WriteLine("Продукт: {0} , стоимость: {1}", product.name, product.price);
+            }
+            Console.WriteLine("Общая цена: {0}", priceWithoutSale());
+            Console.WriteLine("Цена со скидкой: {0}", getTotalPrice());
         }
     }
 }

@@ -6,24 +6,46 @@ using System.Threading.Tasks;
 
 namespace MyProduct
 {
-    public class Product
+    public class Product : IProduct
     {
-        public String name { get; set; }
-        public int price { get; set; }
+        private String _name;
+        private int _price;
+        public String name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                if (value == null || value == "")
+                {
+                    throw new ArgumentException("Неверное наименование продукта");
+                }
+                _name = value;
+            }
+        }
+        public int price
+        {
+            get
+            {
+                return _price;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Неверное количество товара");
+                }
+                _price = value;
+            }
+        }
         public bool isOnSale { get; set; }
         public int countNeedToBuyForSale { get; set; }
         public int salePrice { get; set; }
 
         public Product(String name, int price, bool isOnSale = false, int countNeedToBuyForSale = 0, int salePrice = 0)
         {
-            if (name == null || name == "")
-            {
-                throw new ArgumentException("Неверное наименование продукта");
-            }
-            if (price <= 0)
-            {
-                throw new ArgumentException("Неверное количество товара");
-            }
             this.name = name;
             this.price = price;
             this.isOnSale = isOnSale;

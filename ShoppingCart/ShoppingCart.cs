@@ -7,17 +7,16 @@ using System.Threading.Tasks;
 
 namespace MyShoppingCart
 {
-    public class ShoppingCart
+    public class ShoppingCart : IShoppingCart
     {
-        private List<Product> listOfProducts;
-        private int totalSum;
+        private List<IProduct> listOfProducts= new List<IProduct>();
 
-        public ShoppingCart()
+        public List<IProduct> takeAllProductsFromCart()
         {
-            listOfProducts = new List<Product>();
+            return listOfProducts;
         }
 
-        public void addToCart(Product product, int count = 1)
+        public void addToCart(IProduct product, int count = 1)
         {
             for (int i = 0; i < count; i++)
             {
@@ -25,12 +24,11 @@ namespace MyShoppingCart
             }
         }
 
-        public Product takeFromCart()
+        public IProduct takeFromCart()
         {
-            Product product = listOfProducts.First();
+            IProduct product = listOfProducts.First();
             listOfProducts.Remove(product);
             return product;
-
         }
 
         public bool isEmpty()

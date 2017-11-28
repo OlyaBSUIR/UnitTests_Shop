@@ -3,27 +3,37 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyProduct;
 using MyShoppingCart;
 using System.Diagnostics;
+using System.Collections.Generic;
+using Moq;
 
 namespace ShoppinCart.Test
 {
+
     [TestClass]
     public class ShoppinCartTest
     {
-        private ShoppingCart cart;
-        private Product sweet;
+        private IShoppingCart cart;
+        private IProduct sweet;
 
         // Запускается перед стартом каждого тестирующего метода
         [TestInitialize]
         public void TestInitialize()
         {
-            sweet = new Product("Конфеточки", 125, true, 3, 300);
+            var mockProduct = new Mock<IProduct>();
+            mockProduct.SetupGet(s => s.name).Returns("Конфеточки");
+            mockProduct.SetupGet(s => s.price).Returns(125);
+            mockProduct.SetupGet(s => s.isOnSale).Returns(true);
+            mockProduct.SetupGet(s => s.countNeedToBuyForSale).Returns(3);
+            mockProduct.SetupGet(s => s.salePrice).Returns(300);
+            sweet = mockProduct.Object;
+
             cart = new ShoppingCart();
-            cart.addToCart(sweet);
         }
 
         [TestMethod]
         public void ShoppingCart_addToCart_ContainsProduct()
         {
+            cart.addToCart(sweet);
             Assert.AreNotEqual(true, cart.isEmpty());
         }
 
@@ -31,6 +41,7 @@ namespace ShoppinCart.Test
         public void ShopingCart_takeFromCart_Empty()
         {
             bool expected = true;
+            cart.addToCart(sweet);
             cart.takeFromCart();
 
             bool actual = cart.isEmpty();
@@ -40,8 +51,27 @@ namespace ShoppinCart.Test
         [TestMethod]
         public void ShopingCart_takeFromCart_ProductsEquals()
         {
-            Product product = cart.takeFromCart();
+            cart.addToCart(sweet, 1);
+            IProduct product = cart.takeFromCart();
+
             Assert.AreEqual(sweet, product);
+        }
+
+        [TestMethod]
+        public void ShopingCart_isEmpty_EmptyCart()
+        {
+            cart.addToCart(sweet, 1);
+            IProduct product = cart.takeFromCart();
+
+            Assert.AreEqual(cart.isEmpty(), true);
+        }
+
+        [TestMethod]
+        public void ShopingCart_takeAllProductsFromCart_returnTwoProduct()
+        {
+            List<IProduct> product = cart.takeAllProductsFromCart();
+            cart.addToCart(sweet, 2);
+            Assert.AreEqual(product.Count, 2);
         }
     }
 }
